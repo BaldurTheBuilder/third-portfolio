@@ -2,37 +2,32 @@ const { Schema, model } = require('mongoose');
 
 // I intend on using a database to store my project information.
 // the information I'll need includes:
-// title
 // image
-// date added
-// date project last worked on
-// brief description
-// more in-depth description
 // link to github
 // link to live site (if live)
 
 const projectSchema = new Schema({
-    // taskAuthor: {
-    //     type: String,
-    //     required: true,
-    //     trim: true
-    // },
-    // assignedUser: {
-    //     type: String,
-    //     trim: true
-    // },
-    // watchingUsers: [
-    //   {type: String}
-    // ],
-    projectName: {
+    projectTitle: {
       type: String,
       required: "Your project needs a title!",
       unique: true
-    }/*, */
-    // description: {
-    //   type: String,
-    //   required: "Your task needs a description!",
-    // },
+    },
+    dateAdded: { 
+      type: Date, 
+      default: Date.now 
+    },
+    dateLastWorkedOn: {
+      type: Date, 
+      default: Date.now 
+    },
+    detailedDescription: {
+      type: String,
+      required: "Your project needs a detailed description!",
+    },
+    briefDescription: {
+      type: String,
+      required: "Your project needs a brief description!",
+    },
     // currentFunding: {
     //   type: Number,
     //   default: 0.0,
