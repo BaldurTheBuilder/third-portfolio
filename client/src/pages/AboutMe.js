@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/Page.css';
-import test from '../../../public/profile.jpg';
+import '../styles/Page.css';
+// import test from '../../public/profile.jpg';
 
 // WHEN I am presented with the About Me section I see a recent photo or avatar of the developer and a short bio about them
 // about me should include a profile picture, paragraph of information, and links to social media in a footer.
