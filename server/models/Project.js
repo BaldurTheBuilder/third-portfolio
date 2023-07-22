@@ -24,7 +24,7 @@ const projectSchema = new Schema({
       type: String,
       required: "Your project needs a brief description!",
     },
-    prominentTech: [{type: String}],
+    techUsed: [],
     repoLink: {
       type: String,
       required: "Your project needs a linked Repo."

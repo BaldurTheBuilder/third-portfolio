@@ -24,7 +24,8 @@ db.once('open', async () => {
         // await User.create(userSeeds);
 
         for (let index = 0; index < projectSeeds.length; index++) {
-            const { _id, projectTitle, briefDescription, detailedDescription, techUsed, repoLink, liveLink } = await Project.create(projectSeeds[index]);
+            // const { _id, projectTitle, briefDescription, detailedDescription, techUsed, repoLink, liveLink } = 
+            await Project.create(projectSeeds[index]);
 
             // update authoring user's list of created tasks
             // const authors = await User.findOneAndUpdate(
