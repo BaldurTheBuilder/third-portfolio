@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from "../Navigation";
 import '../../styles/Header.css';
 
-const Header = ({currentPage, handlePageChange}) => {
+const Header = () => {
     return (
     <header className="header">
         <div className="container">
@@ -13,7 +13,7 @@ const Header = ({currentPage, handlePageChange}) => {
                 </div>
 
                 <div className="col-lg-6 col-sm-12">
-                <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
+                <Navigation/>
                 </div>
             </div>
         </div>
