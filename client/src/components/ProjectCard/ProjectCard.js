@@ -1,21 +1,26 @@
 //     A single Project component that will be used multiple times in the Portfolio section
 import React from 'react';
 
-function Card(props) {
-    //{key, task}
-    const project = props.project;
-  
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
+function ProjectCard(props) {
     return (
-      <div>
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
-        <p>Current Funding: ${project.currentFunding}</p>
-        <button>View Task</button>
-      </div>
+      <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
     );
   }
   
-  export default Card;
+  export default ProjectCard;
 
 
 // For each project you feature in your portfolio, you should include the following:
@@ -42,3 +47,23 @@ intended functionality:
 
 
 */
+
+
+    //{key, task}
+    // const project = props.project;
+  //   <div>
+  //   <h3>{project.title}</h3>
+  //   <p>{project.description}</p>
+  //   <p>Current Funding: ${project.currentFunding}</p>
+  //   <button>View Task</button>
+  // </div>
+//   <div class="card">
+//   <div class="card-body">
+//     <h5 class="card-title">Card title</h5>
+//     <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+//     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+//   </div>
+// </div>
+  // <a href="#" class="card-link">Card link</a>
+  // <a href="#" class="card-link">Another link</a>
