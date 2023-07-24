@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 
 // import header and footer
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 // import pages
 import AboutMe from "../pages/AboutMe";
 // import Contact from "../pages/Contact";
 import Portfolio from "../pages/Portfolio";
 import Resume from "../pages/Resume";
+import Home from "../pages/Home";
 
 // each page should include a banner header with my name, and a navbar linking to each page.
 // Each page should also include a footer with icon links to my social media, including github, twitter, my email, phone number, and linkedIn.
@@ -23,6 +24,7 @@ const PageContainer = () => {
         switch(currentPage) {
             case "Portfolio": return <Portfolio/>;
             case "Resume": return <Resume/>;
+            case "Home": return <Home/>;
             default: return <AboutMe/>;
         };
     };

@@ -5,11 +5,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 function ProjectCard(props) {
+  const project = props.project;
+
     return (
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{project.projectTitle}</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
@@ -45,6 +47,11 @@ intended functionality:
 --under this and over the greyed out image, the longDescription for the project appears.
 --   I need to figure out a character limit for the long descriptions, based on the size of the cards.
 
+// For each project you feature in your portfolio, you should include the following:
+//     An image of the deployed application (either a GIF or a screenshot)
+//     The title of the project
+//     A link to the deployed application
+//     A link to the corresponding GitHub repository
 
 */
 

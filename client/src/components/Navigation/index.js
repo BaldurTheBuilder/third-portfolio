@@ -20,10 +20,10 @@ const Navigation = ({currentPage, handlePageChange}) => {
           <li className="nav-item">
             <a
               href="#contact"
-              onClick={() => handlePageChange('Contact')}
-              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+              onClick={() => handlePageChange('Home')}
+              className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
             >
-              Contact
+              Home
             </a>
           </li>
           <li className="nav-item">
