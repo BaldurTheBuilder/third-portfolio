@@ -23,3 +23,22 @@ function Card(props) {
 //     The title of the project
 //     A link to the deployed application
 //     A link to the corresponding GitHub repository
+
+/*
+intended functionality:
+--once enough projects are added with a variety of techUsed tags, viewers can search by tag.
+--a simple drop-down selector will change which cards show up.
+--the cards are organized by date completed/worked on.
+--There is room for four "featured" projects to appear before the regular cards.
+--for now, this information will have to be added manually. Eventually it would be good to check the github API for figuring out when the last pull request on a project was.
+
+--cards are displayed in a grid on the portfolio screen.
+--each card shows a title at the top, an image, and the project's brief description.
+--when the card is floated over, a brief blur animation occurs.
+--once complete, the github link appears at the top under the hypertext name "repo link"
+--if applicable, the live site link appears just below this with the name "live site"
+--under this and over the greyed out image, the longDescription for the project appears.
+--   I need to figure out a character limit for the long descriptions, based on the size of the cards.
+
+
+*/
