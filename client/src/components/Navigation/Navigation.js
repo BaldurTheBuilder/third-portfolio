@@ -3,7 +3,7 @@
 // WHEN I click on a navigation title I see the corresponding section below the navigation without the page reloading and that title is highlighted
 // WHEN I view the navigation titles I see the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
 import React from 'react';
-import '../styles/Navbar.css';
+import '../../styles/Navbar.css';
 
 const Navigation = ({currentPage, handlePageChange}) => {
     return (

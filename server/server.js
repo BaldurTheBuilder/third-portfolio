@@ -1,11 +1,11 @@
 const express = require ("express");
 const path = require("path");
 
-// once the portfolio information is transitioned from hardcoded information to a database, the following will need to be implemented:
-// const { ApolloServer } = require("apollo-server-express");
-// const { authMiddleware } = require('./auth/auth');
-// const { typeDefs, resolvers } = require("./schemas");
-// const db = require("./config/connection");
+const { ApolloServer } = require("apollo-server-express");
+const { authMiddleware } = require('./auth/auth');
+
+const { typeDefs, resolvers } = require("./schemas");
+const db = require("./config/connection");
 
 const app = express();
 const PORT = process.env.PORT || 3001;

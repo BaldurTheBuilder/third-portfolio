@@ -1,10 +1,6 @@
 const { Schema, model } = require('mongoose');
 
-// I intend on using a database to store my project information.
-// the information I'll need includes:
-// image
-// link to github
-// link to live site (if live)
+// image storage needed
 
 const projectSchema = new Schema({
     projectTitle: {
@@ -28,6 +24,14 @@ const projectSchema = new Schema({
       type: String,
       required: "Your project needs a brief description!",
     },
+    techUsed: [],
+    repoLink: {
+      type: String,
+      required: "Your project needs a linked Repo."
+    },
+    liveLink: {
+      type: String
+    }
     // currentFunding: {
     //   type: Number,
     //   default: 0.0,
