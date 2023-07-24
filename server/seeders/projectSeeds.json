@@ -6,8 +6,7 @@
         "prominentTech": [
             "MERN development","Mongoose", "Express", "React", "Node.js", "javascript", "custom CSS", "bcrypt","bootstrap"],
         "repoLink": "https://github.com/BaldurTheBuilder/3rd-project-boot-campers/tree/main",
-        "liveLink": "https://taskasaurus-app.herokuapp.com/",
-        "projectImage": ""
+        "liveLink": "https://taskasaurus-app.herokuapp.com/"
     },
     {
         "projectTitle": "J.A.T.E",
@@ -15,16 +14,31 @@
         "detailedDescription": "This simple text editing program utilizes a PWA to install to the user's system.",
         "techUsed": ["javascript","PWA", "cache manipulation"],
         "repoLink": "https://github.com/BaldurTheBuilder/Text-Editor-using-PWA-SN28u1vg/tree/main",
-        "liveLink": "https://serene-bastion-65960.herokuapp.com/",
-        "projectImage": ""
+        "liveLink": "https://serene-bastion-65960.herokuapp.com/"
     },
     {
         "projectTitle": "Present Pear",
         "briefDescription": "Gift registry app",
-        "detailedDescription": "Present Pear is a gift registry app using Node.js, Express, MySQL, Sequelize, Handlebars, and Passport. Users sign up and log in to create wish lists, groups (for gift-giving events), and view and assign wish lists per group to see what items on another group member's list are still available and what have already been gifted.",
+        "detailedDescription": "Present Pear is a gift registry app that emphasizes anonymity in who is purchasing a gift. The app utilizes Node.js, Express, MySQL, Sequelize, Handlebars, and Passport. Users sign up and log in to create wish lists, groups (for gift-giving events), and view and assign wish lists per group to see what items on another group member's list are still available and what have already been gifted.",
         "techUsed": ["mysql","handlebars", "MVC formatting", "custom API creation", "custom CSS", "bootstrap"],
         "repoLink": "https://github.com/BaldurTheBuilder/2nd-project-team-4",
-        "liveLink": "https://present-pear.herokuapp.com/",
+        "liveLink": "https://present-pear.herokuapp.com/"
+    },
+    {
+        "projectTitle": "React Portfolio",
+        "briefDescription": "Portfolio framework with React",
+        "detailedDescription": "The predecessor to this project is the framework for a portfolio using React. This project is a direct improvement, utilizing the server/client division, MERN development, and fully seeded data.",
+        "techUsed": ["React", "custom CSS", "javascript"],
+        "repoLink": "https://github.com/BaldurTheBuilder/Jack-KC-portfolio",
+        "liveLink": "https://baldurthebuilder.github.io/Jack-KC-portfolio/"
+    },
+    {
+        "projectTitle": "Regex Email Matching",
+        "briefDescription": "Regex tutorial on matching Emails",
+        "detailedDescription": "This project is a clear step-by-step explanation for a regular expression that identifies email addresses. The gist allows the reader to not only learn this specific regex, but the fundamentals of how regular expressions work.",
+        "techUsed": ["gist","regex"],
+        "repoLink": "https://github.com/BaldurTheBuilder/Regex-tutorial-SN23589gh2",
+        "liveLink": "https://gist.github.com/BaldurTheBuilder/37f58d92155f95a969ff87b33ce88776",
         "projectImage": ""
     }
 ]
