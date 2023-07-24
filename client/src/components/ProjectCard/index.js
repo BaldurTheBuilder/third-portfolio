@@ -12,11 +12,11 @@ function ProjectCard(props) {
       {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
       <Card.Body>
         <Card.Title>{project.projectTitle}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Text>{project.briefDescription}
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="secondary">Go somewhere</Button>
+         <a href={project.repoLink} className="card-link">View Repository</a>
+         <a href={project.liveLink} className="card-link">View Live Site</a>
       </Card.Body>
     </Card>
     );

@@ -25,4 +25,7 @@ const Navigation = () => {
   );
   };
   
+
+  //compare this to your last portfolio's navbar. I don't like that this is loading links to the page.
+  //
   export default Navigation;
