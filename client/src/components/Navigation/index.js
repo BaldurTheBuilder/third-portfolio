@@ -15,7 +15,7 @@ const Navigation = () => {
   ];
 
   return (
-    <ul className="navbar nav-tabs">
+    <ul className="navbar nav-pills">
       {links.map((link) => (
         <li className="nav-item" key={link.href}>
           <a className="nav-link" href={link.href}>{link.label}</a>

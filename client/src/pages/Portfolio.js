@@ -14,7 +14,6 @@ function Portfolio() {
 
   return (
     <main>
-      <p>Portfolio Page</p>
       <div id="container">
         <div id="saved-tasks">
           {/* insert scrollable list component */}
