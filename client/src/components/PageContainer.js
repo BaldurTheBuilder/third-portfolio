@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 // import header and footer
-import Header from "./Header";
+import AlternateHeader from "./Header/alternateHeader";
 import Footer from "./Footer";
 
 // import pages
@@ -35,7 +35,7 @@ const PageContainer = () => {
      /* WHEN I load the portfolio I see a page with a header, section for content, and a footer
         WHEN I click on a navigation title I see the corresponding section below the navigation without the page reloading and that title is highlighted*/
     }
-    <Header currentPage={currentPage} handlePageChange={handlePageChange}/>
+    <AlternateHeader currentPage={currentPage} handlePageChange={handlePageChange}/>
     {renderPage()}
     <Footer/>
   </div>

@@ -27,5 +27,5 @@ const Navigation = () => {
   
 
   //compare this to your last portfolio's navbar. I don't like that this is loading links to the page.
-  //
+  //stop using hrefs?
   export default Navigation;
