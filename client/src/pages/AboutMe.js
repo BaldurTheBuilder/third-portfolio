@@ -7,8 +7,8 @@ import '../styles/Page.css';
 export default function AboutMe() {
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-6">
+            <div className="row justify-content-md-center">
+                <div className="col-md-6">
                     <h4>About Me </h4>
                     <p>
                     I am an Oregonian web developer with a deep-seeded interest in creating applications with user-friendly experiences. 

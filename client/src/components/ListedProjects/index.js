@@ -9,13 +9,18 @@ function ListedProjects({projects}) {
         <div className="project-feed-container">
           <h1 className="project-feed-title">Projects Component</h1>
           <div className="project-cards-container">
-            {projects.map(project => (
-              <ProjectCard key={project.id} project={project}/>
-            ))}
+            <div className="row justify-content-md-center">
+
+              {projects.map(project => (
+                <div className="col-md-4 mb-4">
+                <ProjectCard key={project.id} project={project}/>
+                </div>
+              ))}
+
+            </div>
           </div>
         </div>
       );
     }
-    
   
   export default ListedProjects;

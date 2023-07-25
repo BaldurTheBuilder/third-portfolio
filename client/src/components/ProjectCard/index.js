@@ -8,17 +8,17 @@ function ProjectCard(props) {
   const project = props.project;
 
     return (
-      <Card style={{ width: '18rem' }}>
-      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-      <Card.Body>
-        <Card.Title>{project.projectTitle}</Card.Title>
-        <Card.Text>{project.briefDescription}
-        </Card.Text>
-        <Button variant="secondary">Go somewhere</Button>
-         <a href={project.repoLink} className="card-link">View Repository</a>
-         <a href={project.liveLink} className="card-link">View Live Site</a>
-      </Card.Body>
-    </Card>
+        <Card style={{ width: '18rem'}} className="hover-overlay ripple" data-mdb-ripple-color="light">
+          {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+          <Card.Body>
+            <Card.Title>{project.projectTitle}</Card.Title>
+            <Card.Text>{project.briefDescription}
+            </Card.Text>
+            <Button variant="secondary">Go somewhere</Button>
+            <a href={project.repoLink} className="card-link">View Repository</a>
+            <a href={project.liveLink} className="card-link">View Live Site</a>
+          </Card.Body>
+        </Card>
     );
   }
   
