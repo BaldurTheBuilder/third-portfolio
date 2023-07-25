@@ -7,18 +7,17 @@ import '../styles/Page.css';
 export default function AboutMe() {
     return (
         <div className="container">
-            <div className="row">
-                <div className="col-6">
+            <div className="row justify-content-md-center">
+                <div className="col-md-6 mt-5">
                     <h4>About Me </h4>
                     <p>
                     I am an Oregonian web developer with a deep-seeded interest in creating applications with user-friendly experiences. 
                     I recently graduated from the University of Oregon’s coding bootcamp, which has given me a solid foundation in full stack development. 
-                    In fact, the culmination of our work in the bootcamp was a dynamic MERN stack website, which my team built from the ground up. 
-                    Outside of my professional work, I am deeply passionate about music. I studied music in college, and have a bachelor’s in choral music education. 
-                    I also enjoy spending time with friends exploring oldschool roleplaying games such as second edition AD&D, Classic Traveller, and GURPS. 
+                    In fact, the culmination of our work in the bootcamp was a dynamic MERN stack website, which my team built from the ground up.<br/><br/>
+
+                    Outside of professional work, I am deeply passionate about music. I studied music in college, and have a bachelor’s in choral music education. 
+                    I also enjoy spending time with friends exploring old school rennaissance roleplaying games such as second edition AD&D, Classic Traveller, and GURPS. 
                     </p>
-                </div>
-                <div className="col-6">
                 </div>
             </div>
         </div>

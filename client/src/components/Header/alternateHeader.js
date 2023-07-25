@@ -1,8 +1,7 @@
 import React from 'react';
-import Navigation from "../Navigation/Navigation";
-import '../../styles/Header.css';
+import AlternateNavigation from "../Navigation/alternateNavigation";
 
-const Header = ({currentPage, handlePageChange}) => {
+const AlternateHeader = ({currentPage, handlePageChange}) => {
     return (
     <header className="header">
         <div className="container">
@@ -13,7 +12,7 @@ const Header = ({currentPage, handlePageChange}) => {
                 </div>
 
                 <div className="col-lg-6 col-sm-12">
-                <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
+                <AlternateNavigation currentPage={currentPage} handlePageChange={handlePageChange}/>
                 </div>
             </div>
         </div>
@@ -21,4 +20,4 @@ const Header = ({currentPage, handlePageChange}) => {
     );
   };
   
-  export default Header;
+  export default AlternateHeader;
