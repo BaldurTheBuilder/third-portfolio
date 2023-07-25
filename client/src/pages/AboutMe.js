@@ -8,7 +8,7 @@ export default function AboutMe() {
     return (
         <div className="container">
             <div className="row justify-content-md-center">
-                <div className="col-md-6">
+                <div className="col-md-6 mt-5">
                     <h4>About Me </h4>
                     <p>
                     I am an Oregonian web developer with a deep-seeded interest in creating applications with user-friendly experiences. 
@@ -17,8 +17,6 @@ export default function AboutMe() {
                     Outside of my professional work, I am deeply passionate about music. I studied music in college, and have a bachelor’s in choral music education. 
                     I also enjoy spending time with friends exploring oldschool roleplaying games such as second edition AD&D, Classic Traveller, and GURPS. 
                     </p>
-                </div>
-                <div className="col-6">
                 </div>
             </div>
         </div>
