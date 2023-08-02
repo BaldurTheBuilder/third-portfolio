@@ -8,6 +8,8 @@ function ProjectCard(props) {
   const project = props.project;
 
     return (
+
+              <div className='bg-image hover-overlay'>
         <Card style={{ width: '18rem'}} className="hover-overlay ripple" data-mdb-ripple-color="light">
           {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
           <Card.Body>
@@ -19,6 +21,13 @@ function ProjectCard(props) {
             <a href={project.liveLink} className="card-link">View Live Site</a>
           </Card.Body>
         </Card>
+              <div
+                className='mask'
+                style={{
+                  backgroundColor: 'rgba(42, 42, 42, 0.8)',
+                }}
+              ></div>
+            </div>
     );
   }
   
@@ -74,3 +83,6 @@ intended functionality:
 // </div>
   // <a href="#" class="card-link">Card link</a>
   // <a href="#" class="card-link">Another link</a>
+
+
+  
