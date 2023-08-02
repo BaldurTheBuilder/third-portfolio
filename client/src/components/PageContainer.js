@@ -16,7 +16,7 @@ import Home from "../pages/Home";
 
 const PageContainer = () => {
     // WHEN I load the portfolio the first time the About Me title and section are selected by default
-    const [currentPage, setCurrentPage] = useState('AboutMe');
+    const [currentPage, setCurrentPage] = useState('#');
     const handlePageChange = (page) => setCurrentPage(page);
 
     // this is where we build the current page.
@@ -24,8 +24,8 @@ const PageContainer = () => {
         switch(currentPage) {
             case "Portfolio": return <Portfolio/>;
             case "Resume": return <Resume/>;
-            case "Home": return <Home/>;
-            default: return <AboutMe/>;
+            case "About Me": return <AboutMe/>;
+            default: return <Home/>;
         };
     };
     
