@@ -1,29 +1,42 @@
 //     A single Project component that will be used multiple times in the Portfolio section
-import React from 'react';
-
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import React from "react";
+import { MDBBtn } from 'mdb-react-ui-kit';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 function ProjectCard(props) {
   const project = props.project;
 
-    return (
-        <Card style={{ width: '18rem'}} className="hover-overlay ripple" data-mdb-ripple-color="light">
-          {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
-          <Card.Body>
-            <Card.Title>{project.projectTitle}</Card.Title>
-            <Card.Text>{project.briefDescription}
-            </Card.Text>
-            <Button variant="secondary">Go somewhere</Button>
-            <a href={project.repoLink} className="card-link">View Repository</a>
-            <a href={project.liveLink} className="card-link">View Live Site</a>
-          </Card.Body>
-        </Card>
-    );
-  }
-  
-  export default ProjectCard;
+  return (
+    <div className="bg-image hover-overlay ripple"
+    data-mdb-ripple-color="dark">
+      <Card      >
+        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+        <Card.Body>
+          <Card.Title>{project.projectTitle}</Card.Title>
+          <Card.Text>{project.briefDescription}</Card.Text>
+          <MDBBtn variant="secondary">Go somewhere</MDBBtn>
+          <a href={project.repoLink} className="card-link">
+            View Repository
+          </a>
+          <a href={project.liveLink} className="card-link">
+            View Live Site
+          </a>
+        </Card.Body>
+      </Card>
+      <div
+        className="mask"
+        style={{
+          backgroundColor: "rgba(42, 42, 42, 0.6)",
+        }}
+      >
+        <p style={{color: "white", background: "red"}}>test</p>
+      </div>
+    </div>
+  );
+}
 
+export default ProjectCard;
 
 // For each project you feature in your portfolio, you should include the following:
 //     An image of the deployed application (either a GIF or a screenshot)
@@ -55,15 +68,14 @@ intended functionality:
 
 */
 
-
-    //{key, task}
-    // const project = props.project;
-  //   <div>
-  //   <h3>{project.title}</h3>
-  //   <p>{project.description}</p>
-  //   <p>Current Funding: ${project.currentFunding}</p>
-  //   <button>View Task</button>
-  // </div>
+//{key, task}
+// const project = props.project;
+//   <div>
+//   <h3>{project.title}</h3>
+//   <p>{project.description}</p>
+//   <p>Current Funding: ${project.currentFunding}</p>
+//   <button>View Task</button>
+// </div>
 //   <div class="card">
 //   <div class="card-body">
 //     <h5 class="card-title">Card title</h5>
@@ -72,5 +84,5 @@ intended functionality:
 
 //   </div>
 // </div>
-  // <a href="#" class="card-link">Card link</a>
-  // <a href="#" class="card-link">Another link</a>
+// <a href="#" class="card-link">Card link</a>
+// <a href="#" class="card-link">Another link</a>
