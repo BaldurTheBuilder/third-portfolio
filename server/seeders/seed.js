@@ -9,14 +9,13 @@
 //     "projectImage": ""
 // }
 
-
+require('dotenv').config();
 const db = require("../config/connection");
 
 const { User, Project } = require("../models");
 
 // const userSeeds = require('./userSeeds.json');
 const projectSeeds = require('./projectSeeds.json');
-
 db.once('open', async () => {
     try{
         // await User.deleteMany({});
