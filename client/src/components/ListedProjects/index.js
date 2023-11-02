@@ -6,7 +6,7 @@ function ListedProjects({projects}) {
       return <h3>No Projects Yet</h3>;
     }
       return (
-        <div className="project-feed-container m-3">
+        <div className="project-feed-container m-3 ">
           <h1 className="project-feed-title p-3">Projects</h1>
           <div className="project-cards-container">
             <div className="row">
