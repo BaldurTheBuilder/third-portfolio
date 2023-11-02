@@ -1,5 +1,5 @@
 {
-    "name": "jack-portfolio-3",
+    "name": "third-portfolio",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -19,6 +19,7 @@
     "dependencies": {
         "concurrently": "^8.0.1",
         "create-react-app": "^5.0.1",
+        "dotenv": "^16.0.3",
         "yup": "^1.1.0"
     }
 }
