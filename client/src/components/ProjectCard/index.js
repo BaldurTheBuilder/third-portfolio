@@ -1,6 +1,5 @@
 //     A single Project component that will be used multiple times in the Portfolio section
 import React from "react";
-import { MDBBtn } from 'mdb-react-ui-kit';
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
@@ -8,20 +7,13 @@ function ProjectCard(props) {
   const project = props.project;
 
   return (
-    <div className="bg-image hover-overlay ripple"
-    data-mdb-ripple-color="dark">
-      <Card      >
+    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="dark">
+      <Card>
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
           <Card.Title>{project.projectTitle}</Card.Title>
           <Card.Text>{project.briefDescription}</Card.Text>
-          <MDBBtn variant="secondary">Go somewhere</MDBBtn>
-          <a href={project.repoLink} className="card-link">
-            View Repository
-          </a>
-          <a href={project.liveLink} className="card-link">
-            View Live Site
-          </a>
+          <Card.Text>Insert image here</Card.Text>
         </Card.Body>
       </Card>
       <div
@@ -30,7 +22,14 @@ function ProjectCard(props) {
           backgroundColor: "rgba(42, 42, 42, 0.6)",
         }}
       >
-        <p style={{color: "white", background: "red"}}>test</p>
+        <div className="container align-items-center">
+          <div className="row">
+            <Button className="btn btn-primary" href={project.repoLink}>
+              View Repository
+            </Button>
+            <Button href={project.liveLink}>View Live Site</Button>
+          </div>
+        </div>
       </div>
     </div>
   );
