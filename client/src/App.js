@@ -24,9 +24,13 @@ import Resume from "./pages/Resume";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 
+let httpLink;
 
-
-const httpLink = new HttpLink({ uri: 'http://localhost:3001/graphql' });
+if (process.env.NODE_ENV === 'production') {
+  httpLink = new HttpLink({ uri: "/graphql" });
+} else {
+  httpLink = new HttpLink({ uri: "http://localhost:3001/graphql" });
+}
 
 const client = new ApolloClient({
   link: httpLink,
