@@ -28,7 +28,17 @@ const resolvers = {
     //   return Task.find(params);
     // },
   },
-  // Mutation: {
+  Mutation: {
+    //not using context to check whether we're logged in yet
+    updateImage: async (parent, {projectTitle, image}) => {
+      return await Project.findOneAndUpdate(
+        {projectTitle: projectTitle},
+        {image},
+        {new: true}
+        );
+
+
+      }
   //   addUser: async (parent, { username, email, password, firstName }) => {
   //     const user = await User.create({ username, email, password, firstName });
   //     const token = signToken(user);
@@ -67,7 +77,7 @@ const resolvers = {
   //       return task;
   //     }
   //   }
-  // },
+  },
 };
 
 module.exports = resolvers;

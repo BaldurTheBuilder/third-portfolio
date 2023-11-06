@@ -10,6 +10,7 @@ export const QUERY_PROJECTS = gql`
       techUsed
       repoLink
       liveLink
+      image
     }
   }
 `;
