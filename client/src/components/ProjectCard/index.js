@@ -13,7 +13,7 @@ function ProjectCard(props) {
         <Card.Body>
           <Card.Title>{project.projectTitle}</Card.Title>
           <Card.Text>{project.briefDescription}</Card.Text>
-          <Card.Text>Insert image here</Card.Text>
+          <Card.Img src={project.image} alt={`image for ${project.projectTitle}`}/>
         </Card.Body>
       </Card>
       <div

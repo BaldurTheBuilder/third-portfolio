@@ -1,6 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 // image storage needed
+// intending on storing images as base 64 encoded strings
 
 const projectSchema = new Schema({
     projectTitle: {
@@ -30,6 +31,9 @@ const projectSchema = new Schema({
       required: "Your project needs a linked Repo."
     },
     liveLink: {
+      type: String
+    },
+    image: {
       type: String
     }
     // currentFunding: {
