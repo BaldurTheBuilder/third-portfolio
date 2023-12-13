@@ -33,7 +33,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="footer text-center fixed-bottom">
+    <footer className="footer text-center fixed-bottom ">
       <div className="container">
         <div className="row">
           {socialMediaLinks.map((socialMediaLink) => (
