@@ -2,6 +2,8 @@ import React from "react";
 
 import profilePicture from "../assets/profilePicture.jpg";
 
+// current problem: the footer is covering content due to it being fixed-bottom. There are possible flexbox solutions, as well as coding the page css, which is currently blank. I played around with adding a margin-bottom, but it's not working right.
+
 export default function Home() {
   return (
     <div className="container">
